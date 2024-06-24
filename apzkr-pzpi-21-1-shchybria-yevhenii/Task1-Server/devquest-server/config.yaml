@@ -1,0 +1,22 @@
+server:
+    port: 8080
+
+database:
+    host: localhost
+    port: 5432
+    user: postgres
+    password: admin
+    dbname: devquest
+    sslmode: disable
+    timezone: Europe/Kiev
+    connect_timeout: 5
+
+auth:
+    issuer: devquest
+    secret: devquestsecretkey
+    audience: devquest
+    tokenexpiry: 15
+    refreshexpiry: 24
+    cookiedomain: localhost
+    cookiepath: /
+    cookiename: refresh_token
